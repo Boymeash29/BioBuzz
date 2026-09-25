@@ -1,5 +1,7 @@
 package org.firstinspires.ftc.teamcode.opmodes.teleop;
 
+import android.annotation.SuppressLint;
+
 import com.acmerobotics.dashboard.telemetry.TelemetryPacket;
 import com.acmerobotics.roadrunner.Action;
 import com.acmerobotics.roadrunner.Pose2d;
@@ -8,9 +10,6 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 
 import org.firstinspires.ftc.teamcode.Robot;
 import org.firstinspires.ftc.teamcode.sequences.*;
-
-import java.util.List;
-
 
 public abstract class MainTeleop extends LinearOpMode {
 
@@ -32,6 +31,7 @@ public abstract class MainTeleop extends LinearOpMode {
     protected abstract void setAlliance();
     protected abstract void setSequences();
 
+    @SuppressLint("DefaultLocale")
     @Override
     public void runOpMode() {
 
